@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Vos 🌼</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="flowers.png" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #fffde7, #ffe082);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #6e4c00;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .greetings {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    .description {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    .button {
+      margin-top: 28px;
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+      animation-delay: 2s;
+    }
+
+    .botones {
+      background: linear-gradient(90deg, #fbc02d, #fdd835);
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .botones:hover {
+      transform: scale(1.05);
+    }
+
+    .botones a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="greetings">Hola, mi Amor &#x2665; </div>
+  <div class="description">Este detalle es para vos, porque te lo merecés todo, te amo infinitamente mi vida.</div>
+  <div class="button">
+    <button class="botones">
+      <a href="flower.html"> Ver regalo</a>
+    </button>
+  </div>
+</body>
+</html>
